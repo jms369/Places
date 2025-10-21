@@ -92,3 +92,6 @@ flutter:
     - family: Lato
       fonts:
         - asset: assets/fonts/Lato-Regular.ttf
+
+  assets:
+   - assets/images/swi1.jpg

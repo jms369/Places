@@ -17,10 +17,11 @@ class Review extends StatelessWidget{
     //foto
     final foto = Container(
       margin: EdgeInsets.only(
+        top: 10,
         right: 10
       ),
-      width: 80,
-      height: 80,
+      width: 55,
+      height: 55,
       decoration: BoxDecoration(
         shape:BoxShape.circle,
         image: DecorationImage(
@@ -37,7 +38,7 @@ class Review extends StatelessWidget{
         textoNombreUsuario,
         style: TextStyle(
           fontFamily: "Lato",
-          fontSize: 22
+          fontSize: 18
         ),
       ),
     );
@@ -57,7 +58,7 @@ class Review extends StatelessWidget{
 
     //estrella
     final estrella = Container(
-    margin: EdgeInsets.only(right: 5),
+    margin: EdgeInsets.only(right: 1),
     child: Icon(
     Icons.star,
     color: Colors.amber,
@@ -67,7 +68,7 @@ class Review extends StatelessWidget{
 
     //estrella borde
     final estrellaBorde = Container(
-    margin: EdgeInsets.only(right: 5),
+    margin: EdgeInsets.only(right: 1),
     child: Icon(
     Icons.star_border,
     color: Colors.black54,

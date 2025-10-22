@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:places/gradient_back.dart';
 import 'package:places/review.dart';
+import 'package:places/review_list.dart';
 import 'description_pleace.dart';
 
 class MyHome extends StatelessWidget {
@@ -9,7 +11,7 @@ class MyHome extends StatelessWidget {
   Widget build(BuildContext context) {
     final descriptionPlace = Container(
       margin: EdgeInsets.only(
-        top: 250,
+        top: 50,
         left: 30,
         right: 30,
       ),
@@ -20,23 +22,29 @@ class MyHome extends StatelessWidget {
       ),
     );
 
-    final review = Container(
+    final reviewList = Container(
       margin: EdgeInsets.only(
-        top: 300,
+        top: 20,
         left: 30,
         right: 30,
       ),
-      height: 80,
-      child: Review("assets/images/swi1.jpg","Beth Cast","1 reviewa - 3 photos",3, "Muy buen lugar.")
+
+      child: ReviewList()
+    );
+
+    //ListView
+    final listView = ListView(
+      children: <Widget>[
+        descriptionPlace,
+        reviewList
+      ],
     );
 
     return Scaffold(
-      appBar: AppBar(
-        title: Text("My Places"),
-      ),
+
       body: Stack(
         children: <Widget>[
-          review,
+          GradientBack()
         ],
       ),
     );

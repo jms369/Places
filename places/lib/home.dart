@@ -2,7 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:places/gradient_back.dart';
 import 'package:places/review.dart';
 import 'package:places/review_list.dart';
+import 'card_image.dart';
 import 'description_pleace.dart';
+import 'home_app_bar.dart';
 
 class MyHome extends StatelessWidget {
   MyHome({super.key});
@@ -44,7 +46,8 @@ class MyHome extends StatelessWidget {
 
       body: Stack(
         children: <Widget>[
-          GradientBack()
+
+          HomeAppBar("Popular")
         ],
       ),
     );

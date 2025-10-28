@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:places/rounded_button.dart';
 
 class DescriptionPlace extends StatelessWidget {
   final String textoTitulo;
@@ -84,6 +85,7 @@ class DescriptionPlace extends StatelessWidget {
       children: <Widget>[
         filaTitulo,
         descripcion,
+        RoundedButton("Navigate")
       ],
     );
   }
